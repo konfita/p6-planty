@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style>
+        .product-order, .position-formulaire, .case-reponse, .bouton {
+            margin-bottom: 20px;
+        }
+        .separation-line, .separation-vertical-line {
+            border-top: 1px solid #000;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="product-order">
+    <input type="number" id="fraise" name="fraise" min="0" max="100" required>
+  
+    <input type="number" id="pamplemousse" name="pamplemousse" min="0" max="100" required>
+  
+    <input type="number" id="framboise" name="framboise" min="0" max="100" required>
+  
+    <input type="number" id="citron" name="citron" min="0" max="100" required>
+</div>
+  
+<div class="separation-line"></div>
+  
+<div class="position-formulaire">
+    <div>
+        <h2>Vos informations</h2>
+
+        <label for="nom">Nom</label>
+        <div class="case-reponse">
+            <input type="text" id="nom" name="nom" required>
+        </div>
+
+        <label for="prenom">Prénom</label>
+        <div class="case-reponse">
+            <input type="text" id="prenom" name="prenom" required>
+        </div>
+
+        <label for="email">E-mail</label>
+        <div class="case-reponse">
+            <input type="email" id="email" name="email" required>
+        </div>
+    </div>
+  
+    <div class="separation-vertical-line"></div>
+  
+    <div>
+        <h2>Livraison</h2>
+
+        <label for="adresse">Adresse de livraison</label>
+        <div class="case-reponse"> 
+            <input type="text" id="adresse" name="adresse" required>
+        </div>
+
+        <label for="code_postal">Code postal</label>
+        <div class="case-reponse">
+            <input type="text" id="code_postal" name="code_postal" required>
+        </div>
+  
+        <label for="ville">Ville</label>
+        <div class="case-reponse">
+            <input type="text" id="ville" name="ville" required>
+        </div>
+    </div>
+  
+</div>
+<div class="bouton">
+    <input type="submit" value="Commander">
+</div>
+</body>
+</html>
